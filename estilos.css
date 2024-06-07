@@ -1,0 +1,18 @@
+head {
+    display: flex;
+    color: aquamarine;
+    text-align: center;
+}
+
+body {
+    display: grid; 
+    text-align: center;
+    background: rgb(28, 2, 61);
+    color:rgb(47, 145, 44)
+
+}
+
+.container{
+    display: flex ;
+    text-align: center;
+}
