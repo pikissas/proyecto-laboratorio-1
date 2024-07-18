@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Libros - Biblioteca Municipal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="busqueda.js"></script>
+</head>
+<body>
+    <header>
+        <div class="barra-gris">
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="Logo-biblioteca">
+            </div>
+        </div>
+    </header>
+    <section class="lista-libros" id="listaLibros">
+        <h1>Buscar Libros</h1>
+        <form id="formularioBusqueda">
+            <label for="buscarPor">Buscar por:</label>
+            <select id="buscarPor" name="buscarPor">
+                <option value="isbn">ISBN</option>
+                <option value="titulo">Título</option>
+                <option value="autor">Autor</option>
+                <option value="fecha">Fecha de Edición</option>
+                <option value="paginas">Número de Páginas</option>
+                <option value="ejemplares">Cantidad de Ejemplares</option>
+                <option value="disponibles">Ejemplares Disponibles</option>
+                <option value="resumen">Resumen</option>
+                <option value="tipo">Tipo de Ejemplar</option>
+                <option value="tema">Tema</option>
+                <option value="ubicacion">Ubicación</option>
+            </select>
+            <input type="text" id="consultaBusqueda" name="consultaBusqueda" placeholder="Ingrese su búsqueda" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+    <section class="seccion-resultados" id="seccionResultados">
+        <h2>Resultados de la búsqueda</h2>
+        <div id="resultados"></div>
+    </section>
+    <section class="lista-libros" id="listaLibros">
+        <h2>Listado de Libros</h2>
+        <div class="item-libro">
+            <img src="img/El_principito.jpeg" alt="Imagen de libro 1">
+            <h3>Libro 1</h3>
+            <p>ISBN: 1234567890123</p>
+            <p>Título: El Principito</p>
+            <p>Autor: Antoine de Saint-Exupéry</p>
+            <p>Fecha de Edición: 1943</p>
+            <p>Número de Páginas: 96</p>
+            <p>Cantidad de Ejemplares: 10</p>
+            <p>Ejemplares Disponibles: 7</p>
+            <p>Resumen: Un piloto se encuentra con un pequeño príncipe que viaja de planeta en planeta.</p>
+            <p>Tipo de Ejemplar: Físico</p>
+            <p>Tema: Ficción</p>
+            <p>Ubicación: Estante A1</p>
+        </div>
+        <div class="item-libro">
+            <img src="img/El_Quijote.jpg" alt="Imagen de libro 2">
+            <h3>Libro 2</h3>
+            <p>ISBN: 9780140449136</p>
+            <p>Título: El Quijote</p>
+            <p>Autor: Miguel de Cervantes</p>
+            <p>Fecha de Edición: 1605</p>
+            <p>Número de Páginas: 863</p>
+            <p>Cantidad de Ejemplares: 5</p>
+            <p>Ejemplares Disponibles: 3</p>
+            <p>Resumen: La historia del ingenioso hidalgo Don Quijote de la Mancha y su escudero Sancho Panza.</p>
+            <p>Tipo de Ejemplar: Físico</p>
+            <p>Tema: Ficción</p>
+            <p>Ubicación: Estante B2</p>
+        </div>
+        <div class="item-libro">
+            <img src="img/El_Gran_Gatsby.jpg" alt="Imagen de libro 3">
+            <h3>Libro 3</h3>
+            <p>ISBN: 9780743273565</p>
+            <p>Título: El Gran Gatsby</p>
+            <p>Autor: F. Scott Fitzgerald</p>
+            <p>Fecha de Edición: 1925</p>
+            <p>Número de Páginas: 180</p>
+            <p>Cantidad de Ejemplares: 8</p>
+            <p>Ejemplares Disponibles: 5</p>
+            <p>Resumen: Una novela sobre la vida del misterioso millonario Jay Gatsby y su obsesión con Daisy Buchanan.</p>
+            <p>Tipo de Ejemplar: Físico</p>
+            <p>Tema: Ficción</p>
+            <p>Ubicación: Estante C3</p>
+        </div>
+        <div class="item-libro">
+            <img src="img/Crimen_y_Castigo.jpg" alt="Imagen de libro 4">
+            <h3>Libro 4</h3>
+            <p>ISBN: 9780140449266</p>
+            <p>Título: Crimen y Castigo</p>
+            <p>Autor: Fyodor Dostoevsky</p>
+            <p>Fecha de Edición: 1866</p>
+            <p>Número de Páginas: 671</p>
+            <p>Cantidad de Ejemplares: 6</p>
+            <p>Ejemplares Disponibles: 4</p>
+            <p>Resumen: La historia de un estudiante que comete un crimen y lucha con su conciencia.</p>
+            <p>Tipo de Ejemplar: Físico</p>
+            <p>Tema: Ficción</p>
+            <p>Ubicación: Estante D4</p>
+        </div>
+        <div class="item-libro">
+            <img src="img/Moby_Dick.jpeg" alt="Imagen de libro 5">
+            <h3>Libro 5</h3>
+            <p>ISBN: 9780142437230</p>
+            <p>Título: Moby Dick</p>
+            <p>Autor: Herman Melville</p>
+            <p>Fecha de Edición: 1851</p>
+            <p>Número de Páginas: 635</p>
+            <p>Cantidad de Ejemplares: 7</p>
+            <p>Ejemplares Disponibles: 5</p>
+            <p>Resumen: La épica historia del capitán Ahab y su obsesión por cazar a la gran ballena blanca, Moby Dick.</p>
+            <p>Tipo de Ejemplar: Físico</p>
+            <p>Tema: Aventura</p>
+            <p>Ubicación: Estante E5</p>
+        </div>
+        <div class="item-libro">
+            <img src="img/1984.jpeg" alt="Imagen de libro 6">
+            <h3>Libro 6</h3>
+            <p>ISBN: 9780141182803</p>
+            <p>Título: 1984</p>
+            <p>Autor: George Orwell</p>
+            <p>Fecha de Edición: 1948</p>
+            <p>Número de Páginas: 328</p>
+            <p>Cantidad de Ejemplares: 10</p>
+            <p>Ejemplares Disponibles: 8</p>
+            <p>Resumen: Una novela distópica sobre un régimen totalitario que controla todos los aspectos de la vida.</p>
+            <p>Tipo de Ejemplar: Digital</p>
+            <p>Tema: Ciencia Ficción</p>
+            <p>Ubicación: Estante F6</p>
+        </div>
+    </section>
+</body>
+</html>
